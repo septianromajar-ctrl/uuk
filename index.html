@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Games | Your Ultimate Gaming Storefront</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" aria-label="Main Navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-controller"></i> Nexus Games
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <form class="d-flex mx-lg-4 my-3 my-lg-0 flex-grow-1 search-form" role="search">
+                    <div class="input-group">
+                        <span class="input-group-text bg-transparent border-end-0 text-light" id="search-icon">
+                            <i class="bi bi-search"></i>
+                        </span>
+                        <input type="search" class="form-control border-start-0 ps-0" placeholder="Cari game, genre, atau penerbit..." aria-label="Search" aria-describedby="search-icon">
+                    </div>
+                </form>
+
+                <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Toko</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Kontak</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <button class="btn-cart" aria-label="Shopping Cart">
+                            <i class="bi bi-cart3"></i>
+                            <span class="badge bg-danger cart-badge">0</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="row">
+                <div class="col-lg-8 col-xl-7">
+                    <span class="badge bg-primary mb-3 px-3 py-2 text-uppercase letter-spacing-1">Rilis Baru</span>
+                    <h1 class="hero-title">Pemberontakan Sibernetik:<br><span class="text-primary-custom">Pertahanan Terakhir</span></h1>
+                    <p class="hero-subtitle">Rasakan generasi berikutnya dari RPG aksi dunia terbuka. Lakukan pra-pesan sekarang untuk mendapatkan item in-game eksklusif dan akses awal 48 jam.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="detail.html" class="btn btn-primary-custom btn-lg">
+                            <i class="bi bi-bag-plus me-2"></i> Pra-Pesan Sekarang
+                        </a>
+                        <a href="products.html" class="btn btn-outline-custom btn-lg bg-dark bg-opacity-50">
+                            Lihat Toko
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CATEGORIES SECTION -->
+    <section class="section-padding bg-navy">
+        <div class="container">
+            <div class="section-title">
+                <span><i class="bi bi-grid-fill"></i> Jelajahi Kategori</span>
+                <a href="products.html" class="btn btn-outline-custom btn-sm">Lihat Semua <i class="bi bi-arrow-right ms-1"></i></a>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="products.html" class="category-card">
+                        <i class="bi bi-crosshair category-icon"></i>
+                        <h3 class="category-title h6">Aksi / FPS</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="products.html" class="category-card">
+                        <i class="bi bi-shield-shaded category-icon"></i>
+                        <h3 class="category-title h6">RPG</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="products.html" class="category-card">
+                        <i class="bi bi-globe-americas category-icon"></i>
+                        <h3 class="category-title h6">Dunia Terbuka</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="products.html" class="category-card">
+                        <i class="bi bi-car-front-fill category-icon"></i>
+                        <h3 class="category-title h6">Balapan</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="products.html" class="category-card">
+                        <i class="bi bi-palette category-icon"></i>
+                        <h3 class="category-title h6">Indie</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="products.html" class="category-card">
+                        <i class="bi bi-trophy category-icon"></i>
+                        <h3 class="category-title h6">Olahraga</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED GAMES -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <span><i class="bi bi-stars"></i> Unggulan & Sedang Tren</span>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Game Card 1 -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="game-card">
+                        <div class="game-img-wrapper">
+                            <span class="game-badge">-20%</span>
+                            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Pemberontakan Sibernetik">
+                        </div>
+                        <div class="game-card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="game-genre">RPG Aksi</span>
+                                <div class="text-warning small">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <h3 class="game-title"><a href="detail.html" class="text-white text-decoration-none stretched-link">Pemberontakan Sibernetik</a></h3>
+                            <div class="game-footer">
+                                <div class="game-price discounted">
+                                    <small>Rp 899.000</small>Rp 719.000
+                                </div>
+                                <button class="btn btn-primary-custom btn-sm add-to-cart position-relative z-3">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 2 -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="game-card">
+                        <div class="game-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Kecepatan Neon">
+                        </div>
+                        <div class="game-card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="game-genre">Balapan Arkade</span>
+                                <div class="text-warning small">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                            </div>
+                            <h3 class="game-title"><a href="detail.html" class="text-white text-decoration-none stretched-link">Kecepatan Neon</a></h3>
+                            <div class="game-footer">
+                                <div class="game-price">
+                                    Rp 449.000
+                                </div>
+                                <button class="btn btn-primary-custom btn-sm add-to-cart position-relative z-3">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 3 -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="game-card">
+                        <div class="game-img-wrapper">
+                            <span class="game-badge bg-success">BARU</span>
+                            <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Kronik Ether">
+                        </div>
+                        <div class="game-card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="game-genre">RPG Fantasi</span>
+                                <div class="text-warning small">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <h3 class="game-title"><a href="detail.html" class="text-white text-decoration-none stretched-link">Kronik Ether</a></h3>
+                            <div class="game-footer">
+                                <div class="game-price">
+                                    Rp 1.049.000
+                                </div>
+                                <button class="btn btn-primary-custom btn-sm add-to-cart position-relative z-3">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 4 -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="game-card">
+                        <div class="game-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Perbatasan Galaksi">
+                        </div>
+                        <div class="game-card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="game-genre">Simulasi Luar Angkasa</span>
+                                <div class="text-warning small">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                            </div>
+                            <h3 class="game-title"><a href="detail.html" class="text-white text-decoration-none stretched-link">Perbatasan Galaksi</a></h3>
+                            <div class="game-footer">
+                                <div class="game-price">
+                                    Rp 599.000
+                                </div>
+                                <button class="btn btn-primary-custom btn-sm add-to-cart position-relative z-3">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROMO BANNER -->
+    <section class="container pb-5">
+        <div class="promo-banner">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="promo-content">
+                        <div class="promo-label"><i class="bi bi-lightning-charge-fill me-1"></i> Diskon Penerbit Akhir Pekan</div>
+                        <h2 class="display-5 fw-bold text-white mb-3">Diskon hingga 75% untuk Judul Pilihan</h2>
+                        <p class="text-light mb-4 opacity-75 fs-5">Perluas perpustakaan Anda akhir pekan ini. Penawaran luar biasa untuk game pemenang penghargaan, berlaku hingga Minggu tengah malam.</p>
+                        <a href="products.html" class="btn btn-light btn-lg fw-bold">
+                            Klaim Diskon
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block position-relative">
+                    <!-- Decorative Icon for Banner -->
+                    <i class="bi bi-joystick text-white opacity-25" style="font-size: 15rem; position: absolute; right: 20px; top: -100px;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a href="index.html" class="text-decoration-none footer-logo">
+                        <i class="bi bi-controller"></i> Nexus Games
+                    </a>
+                    <p class="text-light pe-lg-4">
+                        Tujuan premium Anda untuk game PC digital. Kami menyediakan game terbaik dengan harga terbaik dengan pengalaman pengiriman yang mulus.
+                    </p>
+                    <div class="social-links mt-4">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="Discord"><i class="bi bi-discord"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-lg-2">
+                    <h4 class="footer-title">Toko</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html">Jelajahi Semua</a></li>
+                        <li><a href="#">Rilis Baru</a></li>
+                        <li><a href="#">Terlaris</a></li>
+                        <li><a href="#">Penawaran Saat Ini</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-6 col-lg-2">
+                    <h4 class="footer-title">Dukungan</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Pusat Bantuan</a></li>
+                        <li><a href="#">Kebijakan Pengembalian Dana</a></li>
+                        <li><a href="#">Status Sistem</a></li>
+                        <li><a href="#">Laporkan Bug</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4">
+                    <h4 class="footer-title">Tetap Terkini</h4>
+                    <p class="text-light">Berlangganan buletin kami untuk rilis terbaru dan diskon eksklusif.</p>
+                    <form class="d-flex mt-3">
+                        <input type="email" class="form-control me-2" placeholder="Alamat Email" aria-label="Email Address">
+                        <button class="btn btn-primary-custom" type="button">Berlangganan</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright text-center text-md-start d-md-flex justify-content-between align-items-center">
+                <p class="mb-0">&copy; 2026 Pasar Game Nexus. Hak cipta dilindungi undang-undang.</p>
+                <div class="mt-3 mt-md-0 d-flex gap-3 text-light">
+                    <i class="bi bi-credit-card fs-4" title="Credit Card"></i>
+                    <i class="bi bi-paypal fs-4" title="PayPal"></i>
+                    <i class="bi bi-bank fs-4" title="Bank Transfer"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
